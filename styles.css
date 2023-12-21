@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sectionA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: rgb(129, 75, 124);
+    height: 600px;
+}
+.rightSide {
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+.rightSide > p {
+    text-align: justify;
+}
