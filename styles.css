@@ -1,21 +1,75 @@
+@font-face {
+    font-family: Cinzel Decorative;
+    src: url(/CinzelDecorative-Regular.ttf);
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url(/Comfortaa-VariableFont_wght.ttf);
+}
+
+
+
+
+
+
+body {
+    background-image: url(/sims\ 3\ winter.jpg);
+
+}
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Comfortaa';
+    text-decoration: none;
+}
+.prettyHeader {
+    font-family: 'Cinzel Decorative';
+    font-size: 30px;
+    filter: drop-shadow(0 0 0.75rem rgb(158, 10, 79));
 }
 .sectionA {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    background-color: rgb(129, 75, 124);
     height: 600px;
 }
 .rightSide {
     width: 400px;
     text-align: center;
     color: white;
+    background-color: rgba(0,0,0,0);
 }
 .rightSide > p {
     text-align: justify;
+}
+.sectionB {
+    background-color: rgba(120, 46, 176, 0.629);
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    border-radius: 20px;
+}
+.sectionB > button {
+    flex-grow: 1;
+    height: 100px;
+    background-color: rgba(86, 33, 127, 0.629);
+    border: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+a {
+    font-family: 'Cinzel Decorative';
+    font-size: 15px;
+    color: white;
+}
+button:hover {
+    background-color: rgba(63, 23, 94, 0.629);
+    transition-duration: 1s;
+    color: rgb(157, 157, 157);
 }
