@@ -43,19 +43,18 @@ body {
 .rightSide > p {
     text-align: justify;
 }
-.sectionB {
-    background-color: rgba(120, 46, 176, 0.629);
+.header {
     margin: 50px;
     margin-left: 100px;
     margin-right: 100px;
-    height: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: top;
     border-radius: 20px;
+    margin-bottom: 0px;
 }
-.sectionB > button {
+.header > button {
     flex-grow: 1;
     height: 100px;
     background-color: rgba(86, 33, 127, 0.629);
@@ -72,4 +71,28 @@ button:hover {
     background-color: rgba(63, 23, 94, 0.629);
     transition-duration: 1s;
     color: rgb(157, 157, 157);
+}
+
+.sectionB {
+    background-color: rgb(207, 201, 208);
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 800px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info {
+    font-family: 'Comfortaa';
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#plannedFeatures {
+    text-align: left;
 }
