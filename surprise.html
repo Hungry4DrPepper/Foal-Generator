@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foal Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesSurprise.css">
 </head>
+
+
+
 <body>
+
+<script>
+
+
+const genderOptions = ['Colt', 'Filly'];
+  const coatOptions = ['Black', 'Bay', 'Chestnut'];
+  const genotypesByCoat = {
+    "Black": ['EE/aa', 'Ee/aa'],
+    "Bay": ['EE/AA', 'EE/Aa', 'Ee/AA', 'Ee/Aa'],
+    "Chestnut": ['ee/AA', 'ee/Aa', 'ee/aa']
+  };
+  let foal = {};
+
+  function randomizeGender() {
+    const para = document.querySelector('#textGender');
+    const genderIndex = Math.floor(Math.random()*genderOptions.length);
+    foal.gender = genderOptions[genderIndex];
+    para.innerHTML = foal.gender;
+  }
+
+  function randomizeCoat() {
+    const para = document.querySelector('#textCoat');
+    const coatIndex = Math.floor(Math.random()*coatOptions.length);
+    foal.coat = coatOptions[coatIndex];
+    para.innerHTML = foal.coat;
+  }
+
+  function randomizeGenotype() {
+    const para = document.querySelector('#textGeno');
+    const genoOptions = genotypesByCoat[foal.coat];
+    const genotypeIndex = Math.floor(Math.random()*genoOptions.length);
+    foal.genotype = genoOptions[genotypeIndex];
+    para.innerHTML = foal.genotype;
+  }
+
+
+</script>
+
+
+
+
+
     <div class="sectionA">
         <div class="leftSide">
             <img src="/Stolen from Amber Cree.webp" alt="Picture of Sims 3 foal" style="height: 500px; width: 700px; object-fit: contain;">
@@ -22,13 +67,36 @@
         </div>
     </div>
 
-    <div class="sectionB">
+    <div class="header">
         <button><a href="/index.html">✩ Home ✩</a></button>
         <button><a href="/surprise.html">✩ Surprise generator ✩</a></button>
         <button><a href="/standard.html">✩ Standard generator ✩</a></button>
+    </div>
+    <div class="sectionB">
+        <h3 class="info">How to use</h3>
+        <p class="info">If it's not self explanatory enough, this is the surprise generator. This generator is meant to slowly reveal your new foal! Click the button to get your new foal, and keep in mind that refreshing the page will reset your results.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="genderPart">
+        <p class="titles">Gender:</p><span id="textGender"></span><button onclick="randomizeGender()">Generate</button>
+        </div>
+
+        <div class="coatPart">
+            <p class="titles">Base coat:</p><span id="textCoat"></span><button class="btn" onclick="randomizeCoat()">Generate</button>
+        </div>
+
+        <div class="genoPart">
+            <p class="titles">Base coat:</p><span id="textGeno"></span><button onclick="randomizeGenotype()">Generate</button>
+        </div>
         
 
     </div>
+
+    <audio src="/[no copyright music] 'In Dreamland ' background music.mp3" autoplay controls></audio>
 
 
     

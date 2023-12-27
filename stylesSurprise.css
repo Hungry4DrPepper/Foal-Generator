@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Cinzel Decorative;
+    src: url(/CinzelDecorative-Regular.ttf);
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url(/Comfortaa-VariableFont_wght.ttf);
+}
+
+
+
+
+
+
+body {
+    background-image: url(/sims\ 3\ winter.jpg);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa';
+    text-decoration: none;
+}
+.prettyHeader {
+    font-family: 'Cinzel Decorative';
+    font-size: 30px;
+    filter: drop-shadow(0 0 0.75rem rgb(158, 10, 79));
+}
+.sectionA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 600px;
+}
+.rightSide {
+    width: 400px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0);
+}
+.rightSide > p {
+    text-align: justify;
+}
+.header {
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+.header > button {
+    flex-grow: 1;
+    height: 100px;
+    background-color: rgba(86, 33, 127, 0.629);
+    border: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+a {
+    font-family: 'Cinzel Decorative';
+    font-size: 15px;
+    color: white;
+}
+button:hover {
+    background-color: rgba(63, 23, 94, 0.629);
+    transition-duration: 1s;
+    color: rgb(157, 157, 157);
+}
+
+.sectionB {
+    background-color: rgb(207, 201, 208);
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 800px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+.info {
+    font-family: 'Comfortaa';
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.genderPart {
+    margin-top: 20px;
+    display: flex;
+    gap: 100px;
+    justify-content: flex-start;
+    margin-left: 300px;
+}
+.coatPart {
+    margin-top: 20px;
+    display: flex;
+    gap: 100px;
+    justify-content: flex-start;
+    margin-left: 300px;
+}
+.genoPart {
+    margin-top: 20px;
+    display: flex;
+    gap: 100px;
+    justify-content: flex-start;
+    margin-left: 300px;
+}
+.titles {
+    font-weight: bold;
+    display: inline-block;
+}
